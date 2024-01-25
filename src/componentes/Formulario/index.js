@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import BotaoFormulario from '../BotaoFormulario'
 import { useState } from 'react'
 
-function Formulario() {
+function Formulario(props) {
     
     const times = [
     'Programação',
@@ -23,7 +23,12 @@ const [time, setTime] = useState('')
 
 const aoSalvar = (evento) => {
     evento.preventDefault()
-    console.log('Form submit => ', nome, cargo, imagem, time)
+    props.colaboradorCadastrado({
+        nome,
+        cargo,
+        imagem,
+        time
+    })
 }
     return (
         <section className='formulario'>
