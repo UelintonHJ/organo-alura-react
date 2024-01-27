@@ -2,8 +2,8 @@ import './Times.css'
 
 const Times = (props) => {
     return (
-        <section class="times">
-            <h3>{props.nome}</h3>
+        <section class="times" style={{backgroundColor:props.corFundo}}>
+            <h3 style={{borderColor:props.corDestaque}}>{props.nome}</h3>
         </section>
     )
 }
