@@ -3,7 +3,6 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import BotaoFormulario from '../BotaoFormulario'
 import { useState } from 'react'
-import Times from '../Times'
 
 function Formulario(props) {
 
