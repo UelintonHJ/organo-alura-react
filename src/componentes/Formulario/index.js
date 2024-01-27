@@ -3,18 +3,9 @@ import CampoTexto from '../CampoTexto'
 import ListaSuspensa from '../ListaSuspensa'
 import BotaoFormulario from '../BotaoFormulario'
 import { useState } from 'react'
+import Times from '../Times'
 
 function Formulario(props) {
-    
-    const times = [
-    'Programação',
-    'Front-End',
-    'Data Science',
-    'Devops',
-    'UX & Design',
-    'Mobile',
-    'Inovação e Gestão'
-]
 
 const [nome, setNome] = useState('')
 const [cargo, setCargo] = useState('')
@@ -37,7 +28,7 @@ const aoSalvar = (evento) => {
                 <CampoTexto obrigatorio={true} label='Nome' placeholder='Digite seu nome' value={nome} aoAlterar={valor => setNome(valor)}/>
                 <CampoTexto obrigatorio={true} label='Cargo' placeholder='Digite seu cargo' value={cargo} aoAlterar={valor => setCargo(valor)}/>
                 <CampoTexto label='Imagem' placeholder='Insira o endereço da sua imagem' value={imagem} aoAlterar={valor => setImagem(valor)}/>
-                <ListaSuspensa label='Time' item={times} value={time} aoAlterar={valor => setTime(valor)}/>
+                <ListaSuspensa label='Time' item={props.times} value={time} aoAlterar={valor => setTime(valor)}/>
                 <BotaoFormulario texto='Criar Card' />
             </form>
         </section>
