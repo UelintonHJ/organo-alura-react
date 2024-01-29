@@ -1,0 +1,21 @@
+.footer {
+    background-color: #6278F7;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-media-imgs ul li{
+    display: inline-block;
+    margin-right: 32px;
+    list-style: none;
+}
+
+.social-media-imgs ul li:last-child {
+    margin-right: 0;
+}
+
+.text-footer {
+    color: #FFF;
+}
