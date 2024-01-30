@@ -18,11 +18,8 @@ const aoSalvar = (evento) => {
         cargo,
         imagem,
         time
-    })
-    setNome('')
-    setCargo('')
-    setImagem('')
-    setTime('')
+    });
+    evento.target.reset();
 }
     return (
         <section className='formulario'>
