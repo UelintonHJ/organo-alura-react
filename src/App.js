@@ -34,7 +34,7 @@ function App() {
     {
       nome: 'UX & Design',
       corDestaque: '#DB6EBF',
-      corFundo: '#E8F8FF'
+      corFundo: '#FAE9F5'
     },
     
     {
