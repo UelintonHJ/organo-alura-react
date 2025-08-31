@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Banner from "./componentes/Banner";
-import Formulario from "./componentes/Formulario";
-import Times from "./componentes/Times";
-import Rodapé from "./componentes/Rodapé";
+import Banner from "./componentes/banner";
+import Formulario from "./componentes/formulario";
+import Times from "./componentes/times";
+import Rodape from "./componentes/rodape";
 
 function App() {
 
@@ -61,7 +61,7 @@ function App() {
       <Banner/>
       <Formulario times={times.map(time => time.nome)} colaboradorCadastrado={colaborador => addColaborador(colaborador)}/>
       {times.map(time => <Times key={time.nome} nome={time.nome} corDestaque={time.corDestaque} corFundo={time.corFundo} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} />)}
-      <Rodapé />    
+      <Rodape />    
     </div>
   );
 }

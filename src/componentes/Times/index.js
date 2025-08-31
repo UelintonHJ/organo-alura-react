@@ -1,4 +1,4 @@
-import Colaboradores from '../Colaboradores'
+import Colaboradores from '../colaboradores'
 import './Times.css'
 
 const Times = (props) => {
