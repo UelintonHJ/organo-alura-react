@@ -1,4 +1,4 @@
-# 🌐 [Organo](organo-alura-react-five.vercel.app/)
+# 🌐 [Organo](https://organo-alura-react-five.vercel.app/)
 
 Um site desenvolvido com **React** para cadastrar equipes de desenvolvedores.
 Cada colaborador é exibido em **cards personalizados**, com cores específicas para cada área e imagem de perfil puxada diretamente do GitHub.
